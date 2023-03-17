@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Val - Confecções - Campinas - A melhor da Região</title>
+</head>
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2? family= Satisfy & family= Signika:wght@400;700 & display=swap');
+/*font-family: 'Satisfy', cursive;
+font-family: 'Signika', sans-serif;  */
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  
+}
+
+
+
+
+body {
+   background-image: url(" https://i.postimg.cc/xTW5fgxv/png-20230316-192120-0000.png ");
+   background-size: 100%;
+  font-size: 100%;
+  /*background-image: linear-gradient(190deg, #bec5c0 0, #b6c1ba 13.5%, #abbcb4 20%, #a0b7af 30.5%, #93b2aa 40%, #86ada6 52.5%, #78a8a4 65%, #6ca3a3 77.5%, #609fa2 90%);*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.box {
+  border: none; /* adicione uma borda */
+  background-color: whitesmoke; /* defina a cor de fundo */
+  opacity: 95%;
+  z-index: -100;
+  border-radius: 1.8px;
+  width: 678px; /* defina a largura  */
+  height: 3000px; /* defina a altura */
+  padding: 10px; /* adicione um espaço interno */
+  margin: 13px auto; /* adicione uma margem externa  */
+}
+
+.box-2 {
+    border: none; /* adicione uma borda */
+  background-color: white; /* defina a cor de fundo */
+  z-index: 1;
+  border-radius: 2.5px;
+  width: 658px; /* defina a largura  */
+  height: 70px; /* defina a altura */
+  padding: 10px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul li a {
+    color: #ffbfbf;
+    font-family: serif;
+    font-weight: 400;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;;
+    color: plum;
+}
+
+.box-3 {
+    border: none; /* adicione uma borda */
+  background-color: #ffbfbf; /* defina a cor de fundo */
+  z-index: ;
+  border-radius: 2.5px;
+  width: 658px; /* defina a largura  */
+  height: 400px; /* defina a altura */
+  padding: 0px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.primeira-secao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.escrita-primeira-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-left: 25px;
+}
+
+.title-primeira-secao {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+}
+
+.subtitle-primeira-secao {
+    font-family: 'Signika', san-serif;
+    font-weight: 340;
+    font-size: 14px;
+    color: white;
+}
+
+.img-campo-de-lavanda {
+    display: block;
+    align-items: center;
+    margin: -4px auto;
+}
+
+
+
+
+#modal-img{
+    max-width: 400px;
+}
+
+.modal{
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    visibility: hidden;
+}
+    
+.modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn-close{
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+    border: solid 1px white;
+}
+
+.modal-active{
+    visibility: visible;
+}
+
+
+
+
+
+
+
+.box-4 {
+    border: none; /* adicione uma borda */
+  background-color: #e2a884; /* defina a cor de fundo */
+  z-index: ;
+  border-radius: 2.5px;
+  width: 658px; /* defina a largura  */
+  height: 1350px; /* defina a altura */
+  padding: 5px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+
+.imagem-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.paragrafo-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paragrafo-galeria p{
+    font-family: 'Signika', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+
+
+/* TODAS AS IMAGENS */
+.logo {
+    max-width: 50px;
+    max-height: 60px;
+} 
+
+#img-primeira-secao {
+    max-width: 320px;
+    margin-left: 0;
+}
+
+img#campo-de-lavanda {
+    max-width: 658px;
+}
+
+img#imagem-galeria{
+    max-width: 199px;
+    margin: 5px 7px;
+}
+
+
+
+
+
+@media(max-width:500px) {
+    .box {
+  border: none; /* adicione uma borda */
+  background-color: whitesmoke; /* defina a cor de fundo */
+  opacity: 95%;
+  z-index: -100;
+  border-radius: 1.8px;
+  width: 400px; /* defina a largura  */
+  height: 2000px; /* defina a altura */
+  padding: 10px; /* adicione um espaço interno */
+  margin: 13px auto; /* adicione uma margem externa  */
+}
+
+.box-2 {border: none; /* adicione uma borda */
+  background-color: white; /* defina a cor de fundo */
+  z-index: 1;
+  border-radius: 2.5px;
+  width: 380px; /* defina a largura  */
+  height: 70px; /* defina a altura */
+  padding: 10px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul li a {
+    color: #ffbfbf;
+    font-size: 10;
+    font-family: serif;
+    font-weight: 400;
+} 
+.menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;;
+    color: plum;
+}
+.box-3 {
+    border: none; /* adicione uma borda */
+  background-color: #ffbfbf; /* defina a cor de fundo */
+  z-index: ;
+  border-radius: 2.5px;
+  width: 380px; /* defina a largura  */
+  height: 200px; /* defina a altura */
+  padding: 0px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+#img-primeira-secao {
+    max-height: 200px;
+    margin-left: 0;
+}
+
+.escrita-primeira-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-left: 35px;
+}
+
+.title-primeira-secao {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.subtitle-primeira-secao {
+    font-family: 'Signika', san-serif;
+    font-weight: 340;
+    font-size: 11px;
+    color: white;
+}
+
+img#campo-de-lavanda {
+    max-width: 380px;
+}
+
+.box-4 {
+    border: none; /* adicione uma borda */
+  background-color: #e2a884; /* defina a cor de fundo */
+  z-index: ;
+  border-radius: 2.5px;
+  width: 380px; /* defina a largura  */
+  height: 770px; /* defina a altura */
+  padding: 5px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+
+.imagem-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.paragrafo-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paragrafo-galeria p{
+    font-family: 'Signika', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+img#imagem-galeria{
+    max-width: 114px;
+    margin: 2px 3px;
+}
+
+
+
+
+}
+
+
+
+
+@media(max-width:400px) {
+      .box {
+  border: none; /* adicione uma borda */
+  background-color: whitesmoke; /* defina a cor de fundo */
+  opacity: 95%;
+  z-index: -100;
+  border-radius: 1.8px;
+  width: 360px; /* defina a largura  */
+  height: 2000px; /* defina a altura */
+  padding: 10px; /* adicione um espaço interno */
+  margin: 13px auto; /* adicione uma margem externa  */
+}
+.box-2 {border: none; /* adicione uma borda */
+  background-color: white; /* defina a cor de fundo */
+  z-index: 1;
+  border-radius: 2.5px;
+  width: 340px; /* defina a largura  */
+  height: 70px; /* defina a altura */
+  padding: 10px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul li a {
+    color: #ffbfbf;
+    font-size: 13px;
+    font-family: serif;
+    font-weight: 400;
+}
+.menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;;
+    color: plum;
+}
+
+
+
+.box-3 {
+    border: none; /* adicione uma borda */
+  background-color: #ffbfbf; /* defina a cor de fundo */
+  z-index: ;
+  border-radius: 2.5px;
+  width: 340px; /* defina a largura  */
+  height: 200px; /* defina a altura */
+  padding: 0px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+#img-primeira-secao {
+    max-height: 200px;
+    margin-left: 0;
+}
+
+.escrita-primeira-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-left: 35px;
+}
+
+.title-primeira-secao {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.subtitle-primeira-secao {
+    font-family: 'Signika', san-serif;
+    font-weight: 340;
+    font-size: 11px;
+    color: white;
+}
+
+img#campo-de-lavanda {
+    max-width: 340px;
+}
+
+.box-4 {
+    border: none; /* adicione uma borda */
+  background-color: #e2a884; /* defina a cor de fundo */
+  z-index: ;
+  border-radius: 2.5px;
+  width: 340px; /* defina a largura  */
+  height: 700px; /* defina a altura */
+  padding: 0px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+
+.imagem-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.paragrafo-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paragrafo-galeria p{
+    font-family: 'Signika', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+img#imagem-galeria{
+    max-width: 104px;
+    margin: 2.5px 2.5px;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media(max-width:320px) {
+      .box {
+  border: none; /* adicione uma borda */
+  background-color: whitesmoke; /* defina a cor de fundo */
+  opacity: 95%;
+  z-index: -100;
+  border-radius: 1.8px;
+  width: 300px; /* defina a largura  */
+  height: 2000px; /* defina a altura */
+  padding: 5px; /* adicione um espaço interno */
+  margin: 10px auto; /* adicione uma margem externa  */
+}
+.box-2 {border: none; /* adicione uma borda */
+  background-color: white; /* defina a cor de fundo */
+  z-index: 1;
+  border-radius: 2.5px;
+  width: 280px; /* defina a largura  */
+  height: 70px; /* defina a altura */
+  padding: 10px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul li a {
+    color: #ffbfbf;
+    font-size: 9px;
+    font-family: serif;
+    font-weight: 400;
+}
+.menu {
+    display: flex;
+    gap: 8px;
+    align-items: center;;
+    color: plum;
+}
+
+
+
+.box-3 {
+    border: none; /* adicione uma borda */
+  background-color: #ffbfbf; /* defina a cor de fundo */
+  z-index: ;
+  border-radius: 2.5px;
+  width: 280px; /* defina a largura  */
+  height: 130px; /* defina a altura */
+  padding: 0px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+#img-primeira-secao {
+    max-height: 130px;
+    margin-left: 0;
+}
+
+.escrita-primeira-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-left: 35px;
+}
+
+.title-primeira-secao {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.subtitle-primeira-secao {
+    font-family: 'Signika', san-serif;
+    font-weight: 340;
+    font-size: 11px;
+    color: white;
+}
+
+img#campo-de-lavanda {
+    max-width: 280px;
+}
+
+
+.box-4 {
+    border: none; /* adicione uma borda */
+  background-color: #e2a884; /* defina a cor de fundo */
+  z-index: ;
+  border-radius: 2.5px;
+  width: 280px; /* defina a largura  */
+  height: 570px; /* defina a altura */
+  padding: 0px; /* adicione um espaço interno */
+  margin: 0 auto; /* adicione uma margem externa  */
+}
+
+.imagem-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.paragrafo-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paragrafo-galeria p{
+    font-family: 'Signika', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+img#imagem-galeria{
+    max-width: 83px;
+    margin: 2.5px 2.5px;
+}
+
+
+
+
+
+
+
+}
+
+</style>
+<!-- corpo do site -->
+<body>
+    
+    <div class="modal">
+    <div class="modal-content">
+        <img id="modal-img" src="https://i.postimg.cc/ydTW2pMV/01ba0b0c42923805c14d01d8c927dea8.jpg">
+    </div>
+    <span id="btn-close">&times;</span>
+</div>  
+    
+    
+    <div class="box">
+  <!-- conteúdo do site  -->
+  <div class="box-2">
+      <!-- conteudo do header -->
+  <header class="header">
+      
+      <img class="logo" src="    https://i.postimg.cc/6QrSkTKN/IMG-20230316-200916.png    " alt="logo">
+      
+      <nav class="nav">
+          
+          <ul class="menu">
+              <li class="menu-item"><a href="#">Início </a></li>
+              <li class="menu-item"><a href="#">peças</a></li>
+              <li class="menu-item"><a href="#"> Conceito</a></li>
+              <li class="menu-item"><a href="#"> Sobre</a></li>
+              <li class="menu-item"><a href="#"> Contato</a></li>
+          </ul>
+         
+      </nav>
+      
+  </header>
+  </div>
+  <div class="box-3">
+  <main class="main">
+      <section class="primeira-secao">
+      <div>
+          <img id="img-primeira-secao" src="https://i.postimg.cc/jSR4qrDy/87d5ea86a7c67c1016d238a1d5410d8c.jpg" alt="mulher posada">
+      </div>
+      <div class="escrita-primeira-secao">
+          <h1 class="title-primeira-secao">
+              Val confecções 
+          </h1>
+          <h2 class="subtitle-primeira-secao">Número 1 em qualidade</h2>
+      </div>
+      </section>
+      
+  </main>
+  <main>
+      <section class="img-campo-de-lavanda">
+          
+          <img id="campo-de-lavanda" src="https://i.postimg.cc/MHkXq47h/IMG-20230317-004219.jpg" alt="mulher no campo de lavanda">
+          
+      </section>
+  </main>
+  
+
+  
+  
+  <main>
+      <div class="box-4">
+          <div class="galeria">
+              <div class="imagem-galeria">
+                  <img class="small-img" id="imagem-galeria" src="   https://i.postimg.cc/ydTW2pMV/01ba0b0c42923805c14d01d8c927dea8.jpg " alt="galeria">
+                  <img class="small-img" id="imagem-galeria" src="  https://i.postimg.cc/zD0VjMw7/0fbc402a00c04cd696a3a8bb098c4a1b.jpg  " alt="galeria">
+                  <img class="small-img" id="imagem-galeria" src="   https://i.postimg.cc/Bn8LtgKg/21d1ce53659682d43c956f1c5a19417f.jpg " alt="galeria">
+              </div>
+              <div class="paragrafo-galeria">
+                  <p class="paragrafo-1">ValConfecçoes</p>
+                  <p class="paragrafo-1">ValConfecçoes</p>
+                  <p class="paragrafo-1">ValConfecçoes</p>
+              </div>
+              <div class="imagem-galeria">
+                  <img class="small-img" id="imagem-galeria" src="   https://i.postimg.cc/rFZR8bKs/2a3748aab22b49ec50894e904e9c2baf.jpg " alt="galeria">
+                  <img class="small-img" id="imagem-galeria" src="  https://i.postimg.cc/WzXFqY89/2d7a71d38afc7ca2e7210545af4c0a05.jpg  " alt="galeria">
+                  <img class="smal-img" id="imagem-galeria" src="  https://i.postimg.cc/W4gdw1Sq/343dd72eea2e3fb7b27223ed628733b5.jpg  " alt="galeria">
+              </div>
+              <div class="paragrafo-galeria">
+                  <p class="paragrafo-1">ValConfecçoes</p>
+                  <p class="paragrafo-1">ValConfecçoes</p>
+                  <p class="paragrafo-1">ValConfecçoes</p>
+              </div>
+              <div class="imagem-galeria">
+                  <img class="small-img" id="imagem-galeria" src="   https://i.postimg.cc/RVhqbRXB/4b655a55e4680b22288b71e08b79f56f.jpg " alt="galeria">
+                  <img class="small-img" id="imagem-galeria" src="  https://i.postimg.cc/SsbzBMjG/a3009b6fb77eadec9a9199a208ae47f4.jpg  " alt="galeria">
+                  <img class="small-img" id="imagem-galeria" src=" https://i.postimg.cc/gcD67rpv/ac4620737024953242e852d4538e4fb7.jpg   " alt="galeria">
+              </div>
+              <div class="paragrafo-galeria">
+                  <p class="paragrafo-1">ValConfecçoes</p>
+                  <p class="paragrafo-1">ValConfecçoes</p>
+                  <p class="paragrafo-1">ValConfecçoes</p>
+              </div>
+              <div class="imagem-galeria">
+                  <img class="small-img" id="imagem-galeria" src="  https://i.postimg.cc/gk26bdc1/ba94ba80815f66d85192987f4dbcecde.jpg  " alt="galeria">
+                  <img class="small-img" id="imagem-galeria" src="  https://i.postimg.cc/HxmVZ1PZ/be514e0fe622b583e805e24c738256db.jpg  " alt="galeria">
+                  <img class="small-img" id="imagem-galeria" src="  https://i.postimg.cc/3JtmkNbK/e9a43f385daf347d690cc72dc3c51882.jpg  " alt="galeria">
+              </div>
+              <div class="paragrafo-galeria">
+                  <p class="paragrafo-1">ValConfecçoes</p>
+                  <p class="paragrafo-1">ValConfecçoes</p>
+                  <p class="paragrafo-1">ValConfecçoes</p>
+              </div>
+          </div>
+          
+      </div>
+  </main>
+  </div>
+</div>
+
+<script>
+    
+   
+
+let imagens = document.querySelectorAll('.small-img')
+let modal = document.querySelector('.modal')
+let modalimg = document.querySelector('#modal-img')
+let btnclose = document.querySelector('#btn-close')
+let srcVal="";
+
+
+for(let i =0; i<imagens.length;i++){
+   imagens[i].addEventListener('click',function()){
+   
+       srcVal = imagens[i].getAttribute('src');
+       modalimg.setAttribute('src', srcVal);
+       modal.classList.toggle('modal-active');
+   });
+    
+}
+
+
+btnclose.addEventListener('click', function(){
+    modal.classList.toggle('modal-active');
+});
+
+
+    
+</script>
+</body>
+</html>
